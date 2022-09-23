@@ -50,3 +50,4 @@ if (numerosCertos >= 1) {
 console.log(`Os números escolhidos foram: ${numerosEscolhidos}`);
 console.log(`O números sorteados foram: ${numerosSorteados}`);
 console.log(`Você acertou ${numerosCertos} numero(s)`);
+
