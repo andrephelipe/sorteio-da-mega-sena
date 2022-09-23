@@ -3,28 +3,20 @@
 /*
     - a pessoa anota 6 numeros de 1 a 60
     - uma sequencia de 6 numeros sorteados
-    - se o numero for correspondente da win
+    - se o número for correspondente da win e mostra qual ela acertou 
 */
 // 0   1  2   3   4  5
 const numerosEscolhidos = [8, 24, 60, 55, 1, 7]; //6 numeros
-let numerosSorteados = [8, 10, 15, 33, 10, 8];
+let numerosSorteados = [];
 
-//Faz com que meu array adicione 6 numeros aleatorios
-// for (i = 0; i < 6; i+=1) {
-//     numerosSorteados.push(Math.floor(Math.random() * 60) +1);
-// }
-
-// let vazio = [];
-
-for (a = 0; a < numerosSorteados.length; a += 1) {
-  for (b = 0; b < numerosSorteados.length; a += 1) {
-    if (numerosSorteados[a] === numerosSorteados[b]) {
-      console.log(numerosSorteados[b]);
-    }
+for(i=0; i < 6; i++) {
+  let numeros = Math.floor(Math.random() * 60) +1;
+  if(numerosSorteados.includes(numeros) == false) {
+    numerosSorteados.push(numeros)
   }
 }
 
-console.log(numerosSorteados);
+// console.log(numerosSorteados);
 
 //Confere se foi gerado os numeros aleatorios
 // console.log(numerosSorteados);
